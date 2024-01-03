@@ -1,0 +1,12 @@
+
+.pageHeader{
+  display: flex;
+  
+}
+
+.moving{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
