@@ -1,12 +1,31 @@
 
-.pageHeader{
+.navBar{
   display: flex;
-  
+align-items: center;
 }
 
-.moving{
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: end;
+.Left-Nav{
+display:flex;
+margin: 10px;
+align-items: center;
+gap:10px;
+}
+
+li{
+
+ list-style-type: none;
+ 
+}
+
+.list-item{
+margin-left:20px;
+color:white;
+font-size:18px;
+}
+a:link { 
+  text-decoration: none; 
+} 
+.Right-Nav{
+  margin-left:auto;
+  margin-right:30px;
 }
