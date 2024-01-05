@@ -25,7 +25,11 @@ export default function Home(){
     <a className="list-item"href="#">About</a>
     <a className="list-item"href="#">Skills</a>
     <a className="list-item"href="#">Projects</a>
-      <a className ="list-item" href=""><LuMoonStar/></a>
+      <a className ="list-item" href="">
+        <LuMoonStar
+        style={{fontSize: "25px"}}
+        />
+        </a>
       <a className="list-item"href="#">Contact</a>
     </li>
   </div>
@@ -45,11 +49,15 @@ export default function Home(){
   style ={{fontSize:"30px"}}
   
   />
-
   </div>
-
 </div>
 </section>
+
+
+<div className="body-right">
+
+  
+</div>
 
 
  
