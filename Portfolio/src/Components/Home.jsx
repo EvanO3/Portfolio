@@ -41,8 +41,8 @@ AOS.init({
 
   <div className="Right-Nav">
     <li>
-    <a className="list-item"href="#">Home</a>
-    <a className="list-item"href="#">About</a>
+    <a className="list-item"href="#" >Home</a>
+    <a className="list-item"href="#" onClick={scrollToAbout}>About</a>
     <a className="list-item"href="#">Skills</a>
     <a className="list-item"href="#">Projects</a>
       <a className="list-item"href="#">Contact</a>
