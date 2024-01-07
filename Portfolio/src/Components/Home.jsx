@@ -6,7 +6,8 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { LuMoonStar } from "react-icons/lu";
 import { FaArrowDown } from "react-icons/fa";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import About from "./About"
 //imported animation from libaray
 import AOS from "aos"
 import "aos/dist/aos.css"
@@ -14,16 +15,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Memoji from "../img/Memoji.jpg"
 
 export default function Home(){
+  //scroll into view from the About page
+const aboutRef = useRef();
 
   useEffect(()=>{
 AOS.init({
   disable:"phone",
   duration:700,
-  easing:"ease-ouut-cubic"
+  easing:"ease-out-cubic"
 })
   },[])
 
-  
+  const scrollToAbout = () =>{
+    console.log('Scrolled')
+    aboutRef.current?.scrollIntoView({behavior:'smooth'});
+  };
 
   return(
     <>
@@ -56,12 +62,23 @@ AOS.init({
   
   <div className="left-text">
     <span style={{fontSize: "20px"}}>Hi There <p className="Wave">👋🏾</p> I'm</span>
-    <h1 style={{fontSize: "40px"}}>Evan Oni</h1>
-    <h1 style={{fontSize: "40px"}}>Information Technology <br/>Student</h1>
+    <h1 style={{fontSize: "35px"}}>Evan </h1>
+    <h1 style={{fontSize: "35px"}}> and I'm  an Information Technology <br/>Student</h1>
+   
+    <div className="icons">
+    <BsLinkedin
+    style={{fontSize:"20px"}}/>
+    <FaGithub
+    style={{fontSize:"20px"}}/>
+    </div>
+
+   
     <div className="animateArrow">
   <FaArrowDown
+  onClick={scrollToAbout}
   style ={{fontSize:"30px"}}
   />
+
   </div>
   </div>
 <div className="right-container">
@@ -70,15 +87,10 @@ AOS.init({
 </div>
 </div>
 
-
-
-
-
-  
 </div>
 </section>
 
-
+<About ref={aboutRef}/>
 
 
 
