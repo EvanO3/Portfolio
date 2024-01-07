@@ -44,13 +44,38 @@ a:link {
   margin-left:auto;
   margin-right:30px;
 }
+
 .body-left{
   display: flex;
-  margin-top:150px;
-  margin-left:150px;
-  flex-direction: column;
-
+  justify-content:center;
+align-items: center;
+padding:20px 0px;
 }
+
+.left-text{
+display:flex;
+flex-direction: column;
+}
+
+.right-container {
+  margin-left: 30em; 
+}
+
+.right-text {
+  width: 300px;
+  max-width: 200px;
+}
+
+.Memoji {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 .Wave{
   font-size: 30px;
    animation-name:wave-animation;
@@ -82,7 +107,12 @@ section{
 }
 
 .animateArrow{
+  position: relative;
   animation: jumpInfinite 1.5s infinite;
+}
+.arrowContainer{
+  position: relative;
+
 }
 .animateArrow:after{
 content:" ";
@@ -94,6 +124,7 @@ width: 16px;
  
   border-radius: 4px;
   transform: rotateZ(45deg);
+  position:absolute;
 
 }
 
@@ -107,4 +138,25 @@ width: 16px;
   100% {
     margin-top: 0;
   }
+}
+
+
+.About-left{
+
+}
+
+.tackle{
+  margin-left:5px;
+  color:#4169E1;
+  
+}
+
+.Memoji{
+  display: flex;
+  flex-direction:column;
+margin-left:30em;
+margin-bottom:px;
+width:100px;
+max-width:100%;
+height: auto;
 }
