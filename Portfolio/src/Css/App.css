@@ -10,6 +10,8 @@ body{
   font-family: 'Montserrat', sans-serif;
   background-color: white;
   scroll-behavior: smooth;
+  padding:0;
+  margin:0;
 }
 .navBar{
   display: flex;
@@ -49,16 +51,18 @@ a:link {
   display: flex;
   justify-content:center;
 align-items: center;
+margin-top:100px;
 padding:20px 0px;
 }
 
 .left-text{
 display:flex;
 flex-direction: column;
+margin-left:40px;
 }
 
 .right-container {
-  margin-left: 30em; 
+  margin-left:50px; 
 }
 
 .right-text {
@@ -66,13 +70,7 @@ flex-direction: column;
   max-width: 200px;
 }
 
-.Memoji {
-  display: flex;
-  flex-direction: column;
-  width: 100px;
-  max-width: 100%;
-  height: auto;
-}
+
 
 
 
@@ -104,6 +102,7 @@ section{
   display:flex; 
   justify-content: center;
   align-items: center;
+  
 }
 
 .animateArrow{
@@ -141,9 +140,7 @@ width: 16px;
 }
 
 
-.About-left{
 
-}
 
 .tackle{
   margin-left:5px;
@@ -151,12 +148,21 @@ width: 16px;
   
 }
 
-.Memoji{
-  display: flex;
-  flex-direction:column;
-margin-left:30em;
-margin-bottom:px;
-width:100px;
-max-width:100%;
-height: auto;
+
+.icons{
+  display:flex;
+  gap:6px
+}
+
+.About-me{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding:40px 0;
+  gap:40px;
+}
+
+.About-right{
+  
 }
