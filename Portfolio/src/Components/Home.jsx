@@ -13,6 +13,8 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Memoji from "../img/Memoji.jpg"
+import {Link} from 'react-router-dom'
+
 
 export default function Home(){
   //scroll into view from the About page
@@ -24,6 +26,11 @@ AOS.init({
   duration:700,
   easing:"ease-out-cubic"
 })
+  },[])
+
+
+  useEffect(()=>{
+
   },[])
 
   const scrollToAbout = () =>{
@@ -43,7 +50,6 @@ AOS.init({
     <li>
     <a className="list-item"href="#" >Home</a>
     <a className="list-item"href="#" onClick={scrollToAbout}>About</a>
-    <a className="list-item"href="#">Skills</a>
     <a className="list-item"href="#">Projects</a>
       <a className="list-item"href="#">Contact</a>
       <a className ="list-item" href="">
@@ -67,9 +73,22 @@ AOS.init({
    
     <div className="icons">
     <BsLinkedin
-    style={{fontSize:"20px"}}/>
-    <FaGithub
-    style={{fontSize:"20px"}}/>
+    style={{fontSize:"20px"}}
+    onClick={()=>{
+      window.location.href="https:///www.linkedin.com/in/"
+     
+    }}
+    />
+
+   <FaGithub
+    style={{fontSize:"20px"}}
+    onClick={()=>{
+      window.location.href="https://github.com/EvanO3"
+     
+    }}
+    
+    />
+    
     </div>
 
    
