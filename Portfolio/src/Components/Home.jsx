@@ -8,6 +8,7 @@ import { LuMoonStar } from "react-icons/lu";
 import { FaArrowDown } from "react-icons/fa";
 import { useEffect, useRef } from "react";
 import About from "./About"
+import Project from "./Project";
 //imported animation from libaray
 import AOS from "aos"
 import "aos/dist/aos.css"
@@ -19,6 +20,7 @@ import Memoji from "../img/Memoji.jpg"
 export default function Home(){
   //scroll into view from the About page
 const aboutRef = useRef();
+const projectRef = useRef();
 
   useEffect(()=>{
 AOS.init({
@@ -29,14 +31,18 @@ AOS.init({
   },[])
 
 
-  useEffect(()=>{
-
-  },[])
+  
 
   const scrollToAbout = () =>{
     console.log('Scrolled')
     aboutRef.current?.scrollIntoView({behavior:'smooth'});
   };
+
+  const scrollToProject = () =>{
+    console.log('Scrolled')
+    projectRef.current?.scrollIntoView({behavior:'smooth'});
+  };
+
 
   return(
     <>
@@ -50,7 +56,7 @@ AOS.init({
     <li>
     <a className="list-item"href="#" >Home</a>
     <a className="list-item"href="#" onClick={scrollToAbout}>About</a>
-    <a className="list-item"href="#">Projects</a>
+    <a className="list-item"href="#"onClick={scrollToProject}>Projects</a>
       <a className="list-item"href="#">Contact</a>
       <a className ="list-item" href="">
         <LuMoonStar
@@ -111,7 +117,7 @@ AOS.init({
 
 <About ref={aboutRef}/>
 
-
+<Project ref ={projectRef}/>
 
  
  
