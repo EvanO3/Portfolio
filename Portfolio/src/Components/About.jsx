@@ -3,6 +3,7 @@ import {forwardRef} from 'react'
 import photo from '../img/Photo.jpg'
 import {useEffect} from "react"
 import AOS from "aos"
+
 import "aos/dist/aos.css"
 
 const About =forwardRef((props, ref)=>{
@@ -13,6 +14,13 @@ const About =forwardRef((props, ref)=>{
           easing:"ease-out-cubic"
         })
           },[])
+
+
+          useEffect(()=>{
+
+          },[])
+        
+         
 
 return(
     <section ref={ref}>
@@ -32,6 +40,7 @@ return(
           into building robust and scalable applications
         
         </p>
+        <button>View Projects</button>
       </div>
       <div className="About-rightCon">
         <div className="About-right">
