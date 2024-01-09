@@ -192,9 +192,22 @@ flex-direction: column;
 
   
 }
+.Weatherimg2{
+  margin-left:9em;
+  border: 3px solid #3498db; 
+  border-radius: 10px;
+  overflow: hidden; }
+
 .Weatherimg img{
   width:100%;
   height: auto;
   display: block;
 }
 
+.project-Title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom:40px;
+}
