@@ -4,14 +4,27 @@ import weatherApp from '../img/WeatherApp.jpg'
 import mealTracker from '../img/mealTracker.jpg'
 import Dream from "../img/DreamThenAchieve.jpg"
 import { forwardRef } from "react"
+import { useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const Project = forwardRef((props, ref)=>{
+    useEffect(()=>{
+        AOS.init({
+          disable:"phone",
+          duration:700,
+          easing:"ease-out-cubic"
+        })
+          },[])
+        
+
     return(
-        <section ref={ref}>
+        <section ref={ref} data-aos ="fade-right">
         <div className="project-Body">
       <div className="project-Title">
          <h2>Projects</h2> 
-        <p>Here you will find some of my personal projects that <br/>i have worked on with links to them included</p>
+    <p>Here you'll discover a colletion of academic and personal projects, each accompanied by links to demo each<br/> </p>
+    <p>project, showcasing the diverse range of creatiioons I've developed</p>
  
       </div>
  
@@ -77,6 +90,7 @@ const Project = forwardRef((props, ref)=>{
          
         </div>
         </section>
+        
     )
 })
 Project.displayName= "Project";
