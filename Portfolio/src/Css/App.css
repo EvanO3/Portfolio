@@ -211,3 +211,30 @@ flex-direction: column;
   flex-direction: column;
   margin-bottom:40px;
 }
+
+.footer{
+  position:sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+
+.Skills{
+  margin-left:10em;
+  font-weight:bold;
+}
+
+.SkillSet{
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+
+}
+
+.skillSet{
+  border: 2px solid #ffffff; /* Add a white border with 2px width */
+  padding: 10px;
+}
