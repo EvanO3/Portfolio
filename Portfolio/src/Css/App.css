@@ -163,6 +163,38 @@ width: 16px;
   gap:40px;
 }
 
-.About-right{
+.project-Body{
+  display:flex;
+  flex-direction: column;
+  padding:120px 0;
+  margin-left:70px;
+  gap:40px;
+}
+
+.project1{
+display: flex;
+
+
+
+}
+
+.content{
+display:flex;
+flex-direction: column;
+
+}
+
+.Weatherimg{
+   margin-left:10em;
+   border: 3px solid #3498db; 
+   border-radius: 10px;
+   overflow: hidden; 
+
   
 }
+.Weatherimg img{
+  width:100%;
+  height: auto;
+  display: block;
+}
+
