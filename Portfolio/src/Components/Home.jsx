@@ -9,6 +9,7 @@ import { FaArrowDown } from "react-icons/fa";
 import { useEffect, useRef } from "react";
 import About from "./About"
 import Project from "./Project";
+
 //imported animation from libaray
 import AOS from "aos"
 import "aos/dist/aos.css"
@@ -79,7 +80,7 @@ AOS.init({
    
     <div className="icons">
     <BsLinkedin
-    style={{fontSize:"20px"}}
+    style={{fontSize:"30px"}}
     onClick={()=>{
       window.location.href="https:///www.linkedin.com/in/"
      
@@ -87,7 +88,7 @@ AOS.init({
     />
 
    <FaGithub
-    style={{fontSize:"20px"}}
+    style={{fontSize:"30px"}}
     onClick={()=>{
       window.location.href="https://github.com/EvanO3"
      
@@ -117,9 +118,12 @@ AOS.init({
 
 <About ref={aboutRef}/>
 
-<Project ref ={projectRef}/>
+<Project ref ={projectRef}
 
- 
+
+/>
+
+
  
 
 
