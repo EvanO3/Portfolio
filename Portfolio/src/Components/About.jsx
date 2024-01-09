@@ -45,7 +45,10 @@ return(
           into building robust and scalable applications
         
         </p>
+        <div className="resume">
+ <button className="resumeClass">Resume</button>
 
+ </div>
     </div>
  <div className="Skills"  style={{fontSize:"24px"}}>
  <p>Skills</p>
@@ -65,6 +68,8 @@ return(
  <p style={{fontSize:"20px"}}className="skillSet">R Studio</p>
  <p style={{fontSize:"20px"}}className="skillSet">SEO Optomization</p>
  <p style={{fontSize:"20px"}}className="skillSet">MatLab</p>
+
+
 
 
 
