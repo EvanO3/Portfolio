@@ -16,9 +16,7 @@ const About =forwardRef((props, ref)=>{
           },[])
 
 
-          useEffect(()=>{
-
-          },[])
+        
         
          
 
