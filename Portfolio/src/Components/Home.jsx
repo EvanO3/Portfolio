@@ -13,7 +13,7 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Memoji from "../img/Memoji.jpg"
-import {Link} from 'react-router-dom'
+
 
 
 export default function Home(){
