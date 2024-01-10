@@ -6,6 +6,7 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 
 
+
 const About =forwardRef((props, ref)=>{
     useEffect(()=>{
         AOS.init({
@@ -46,7 +47,10 @@ return(
         
         </p>
         <div className="resume">
- <button className="resumeClass">Resume</button>
+    
+ <button className="resumeClass">Contact</button>
+
+          
 
  </div>
     </div>
