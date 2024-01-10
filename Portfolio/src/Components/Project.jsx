@@ -78,18 +78,10 @@ const Project = forwardRef((props, ref)=>{
  
  </div>
         </div>
- 
- 
-        
-   
-   
-       
- 
- 
- 
-         
         </div>
         </section>
+
+      
         
     )
 })
