@@ -9,6 +9,7 @@ import { FaArrowDown } from "react-icons/fa";
 import { useEffect, useRef } from "react";
 import About from "./About"
 import Project from "./Project";
+import Contact from "./Contact";
 
 //imported animation from libaray
 import AOS from "aos"
@@ -75,7 +76,7 @@ AOS.init({
   
   <div className="left-text">
     <span style={{fontSize: "20px"}}>Hi There <p className="Wave">👋🏾</p> I'm</span>
-    <h1 style={{fontSize: "35px"}}>Evan </h1>
+    <h1 style={{fontSize: "35px"}}>Evan Oni </h1>
     <h1 style={{fontSize: "35px"}}> and I'm  an Information Technology <br/>Student</h1>
    
     <div className="icons">
@@ -119,9 +120,15 @@ AOS.init({
 <About ref={aboutRef}/>
 
 <Project ref ={projectRef}
-
-
 />
+
+
+<Contact/>
+
+
+
+
+
 
 
  
